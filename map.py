@@ -51,7 +51,7 @@ def get_routes(of):
 		'Content-Type': 'application/json',
 	}
 		
-	r = requests.post('http://ipinfo.io/batch?token=e429dec447446f', headers=headers, json=ips).json()
+	r = requests.post('http://ipinfo.io/batch?token=e429dec447446f', headers=headers, json=ips).json() ## create an account and get a free token on ipinfo
 
 	for order, ip in ips_with_order.items():
 		if ip in r:
